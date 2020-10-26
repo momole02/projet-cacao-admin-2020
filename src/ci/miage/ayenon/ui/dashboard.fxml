@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="1049.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ci.miage.ayenon.ui.DashboardController">
+   <children>
+      <VBox prefHeight="571.0" prefWidth="244.0" style="-fx-background-color: #cccccc;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="45.0" top="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="candidatesLabel" maxWidth="1.7976931348623157E308" onMouseClicked="#showCandidatesPanel" styleClass="menu-item" text="✦Candidats">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="juryMembersLabel" maxWidth="1.7976931348623157E308" onMouseClicked="#showJuryPanel" styleClass="menu-item" text="✦Membres du jury">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="resultsLabel" maxWidth="1.7976931348623157E308" onMouseClicked="#showResultsPanel" styleClass="menu-item" text="✦Resultats">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="mainVBox" maxWidth="1.7976931348623157E308" prefHeight="571.0" prefWidth="796.0" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>

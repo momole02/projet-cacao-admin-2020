@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="745.0" stylesheets="@common.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ci.miage.ayenon.ui.NewCandidateController">
+   <children>
+      <Label maxWidth="1.7976931348623157E308" styleClass="form-title" text="Identitié">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="192.0" prefWidth="371.0">
+               <children>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Nom : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="lastNameTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Date de maissance : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker fx:id="birthDatePicker" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Sexe:">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <RadioButton fx:id="maleRd" mnemonicParsing="false" text="Masculin">
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="g1" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="femaleRd" mnemonicParsing="false" text="Feminin" toggleGroup="$g1" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefWidth="600.0">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="45.0" prefWidth="600.0">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <Label prefWidth="150.0" text="Photo">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#choosePhoto" text="..." />
+                        <TextField fx:id="photoFileTxField" editable="false" prefHeight="25.0" prefWidth="174.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="132.0" prefWidth="370.0">
+               <children>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Prenom:">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="firstNameTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Lieu de naissance : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="birthPlaceTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Extrait de naissance :">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#chooseBirthAct" text="..." />
+                        <TextField fx:id="birthActFileTxField" editable="false" prefHeight="25.0" prefWidth="174.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="45.0" prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Téléphone:">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="phoneNumberTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label maxWidth="1.7976931348623157E308" styleClass="form-title" text="Plantation">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="80.0" prefWidth="735.0">
+         <children>
+            <VBox prefHeight="69.0" prefWidth="369.0">
+               <children>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Localité : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="localityTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Type de plantation : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <RadioButton fx:id="cocoaRd" mnemonicParsing="false" text="Cacao">
+                           <HBox.margin>
+                              <Insets right="60.0" />
+                           </HBox.margin>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="g2" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="coffeeRd" mnemonicParsing="false" text="Café" toggleGroup="$g2" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="384.0">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="137.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Superficie(en ha) : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="areaTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label maxWidth="1.7976931348623157E308" styleClass="form-title" text="Accès compte">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="361.0">
+               <children>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Email : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="emailTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Mot de passe : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <PasswordField fx:id="passwordTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefWidth="600.0">
+                     <children>
+                        <Label prefWidth="150.0" text="Confirmation : ">
+                           <HBox.margin>
+                              <Insets top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <PasswordField fx:id="confirmPasswordTxField" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="35.0" prefWidth="399.0">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+         <children>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#onSave" text="Enregistrer">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onCancel" text="Annuler" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" />
+   </padding>
+</VBox>

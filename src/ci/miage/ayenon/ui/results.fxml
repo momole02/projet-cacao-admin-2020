@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="800.0" stylesheets="@common.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ci.miage.ayenon.ui.ResultsController">
+   <children>
+      <Label maxWidth="1.7976931348623157E308" styleClass="form-title" text="RESULTATS DU CONCOURS">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <TabPane maxHeight="1.7976931348623157E308" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <tabs>
+          <Tab closable="false" text="Concours - café">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="coffeeTView" maxHeight="1.7976931348623157E308" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                     </children></VBox>
+               </content>
+          </Tab>
+          <Tab closable="false" text="Concours - cacao">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="cocoaTView" maxHeight="1.7976931348623157E308" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                     </children></VBox>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <TitledPane text="Notes par membre du jury" underline="true">
+         <content>
+            <TableView fx:id="juryMarksTView" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </TitledPane>
+      <HBox fx:id="loadingIndicatorHBox" prefHeight="20.0" prefWidth="800.0">
+         <children>
+            <ProgressIndicator prefHeight="25.0" prefWidth="31.0" />
+            <Label text="Chargement des resultats" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

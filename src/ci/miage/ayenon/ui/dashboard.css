@@ -1,0 +1,10 @@
+
+.menu-item{
+    -fx-background-color:#cfcfcf;
+    -fx-text-fill:black;
+}
+
+.menu-item:hover, .menu-item-selected{
+    -fx-background-color:#8B4513;
+    -fx-text-fill:white;
+}

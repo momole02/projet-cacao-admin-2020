@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Marc Arnaud/eclipse-workspace/cacao_admin/OJDBC-Full/ojdbc5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marc Arnaud/eclipse-workspace/cacao_admin/OJDBC-Full/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marc Arnaud/eclipse-workspace/cacao_admin/OJDBC-Full/ons.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marc Arnaud/eclipse-workspace/cacao_admin/OJDBC-Full/orai18n.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marc Arnaud/eclipse-workspace/cacao_admin/OJDBC-Full/simplefan.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marc Arnaud/eclipse-workspace/cacao_admin/OJDBC-Full/ucp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Marc Arnaud/eclipse-workspace/cacao_admin/OJDBC-Full/xdb6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
